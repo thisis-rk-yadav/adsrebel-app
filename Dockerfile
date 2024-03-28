@@ -24,6 +24,6 @@ COPY --from=BUILD_IMAGE /app/react-app/dist/ /app/react-app/dist/
 EXPOSE 8080
 #to run npm commands, we need package.json
 COPY package.json .
-COPY vite.config.json .
+COPY vite.config.js .
 
 CMD [ "npm","run", "preview" ]
