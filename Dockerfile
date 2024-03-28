@@ -25,5 +25,5 @@ EXPOSE 8080
 #to run npm commands, we need package.json
 COPY package.json .
 COPY vite.config.js .
-
+RUN npm install
 CMD [ "npm","run", "preview" ]
